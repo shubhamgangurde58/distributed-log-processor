@@ -1,6 +1,7 @@
 package com.shubham.dlp.distributed_log_processor.client;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
@@ -18,6 +19,11 @@ public class LogClient {
 				
 				System.out.println("Connected to Server Successfully ! ");
 				
+				PrintWriter writer = new PrintWriter(socket.getOutputStream(),true);
+				
+				writer.println("2026-07-03T18:30:45|INFO|Application Started");
+
+				System.out.println("Log Sent Successfully.");
 				
 				
 		}catch(IOException ex) {
