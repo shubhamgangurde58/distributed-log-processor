@@ -4,8 +4,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
+import com.shubham.dlp.distributed_log_processor.database.LogDAO;
 import com.shubham.dlp.distributed_log_processor.model.Log;
 import com.shubham.dlp.distributed_log_processor.processor.LogParser;
+import com.shubham.dlp.distributed_log_processor.processor.LogValidator;
 
 public class ClientHandler extends Thread {
 	
@@ -21,15 +23,19 @@ public class ClientHandler extends Thread {
 
 	public void run() {
 		
-	    System.out.println(
-                "Handling Client : "
-                        + socket.getInetAddress().getHostAddress());	
+	    System.out.println("Handling Client : " + socket.getInetAddress().getHostAddress());	
 	    
 	    try {
 	    	
 	    		BufferedReader reader= new BufferedReader( new InputStreamReader(socket.getInputStream()));
 	    	
 	    		String receivedLog  = reader.readLine();
+	    		
+	    		if(receivedLog == null) {
+	    			
+	    		    System.out.println("Client disconnected.");
+	    		    return;
+	    		}
 
 	    		System.out.println("Received Log : " + receivedLog);
 	    		
@@ -38,10 +44,53 @@ public class ClientHandler extends Thread {
 	    	     Log log = parser.parse(receivedLog);
 
 	    	     System.out.println(log);
+	    	     
+	    	     	LogValidator validator = new LogValidator();
+
+		    	     if (validator.validate(log)) {
+		    	    	 
+		    	         System.out.println("Log Validation : SUCCESS");
+		    	         
+		    	     } else {
+		    	    	 
+		    	         System.out.println("Log Validation : FAILED");
+		    	     }
+		    	     
+		    	     
+		    	     LogDAO dao = new LogDAO();
+
+		    	     if (validator.validate(log)) {
+
+		    	         System.out.println("Log Validation : SUCCESS");
+
+		    	         boolean saved = dao.saveLog(log);
+
+		    	         if(saved) {
+
+		    	             System.out.println("Log Stored Successfully.");
+
+		    	         } else {
+
+		    	             System.out.println("Failed To Store Log.");
+
+		    	         }
+
+		    	     } else {
+
+		    	         System.out.println("Log Validation : FAILED");
+
+		    	     }
+		    	     
+		    	     reader.close();
+		    	     socket.close();
+		    	     
+		    	     
+		    	     
+		    	
+	    }catch(Exception e){
 	    	
-	    }catch(Exception e) {
 	    	
-	    	e.printStackTrace();
+	        System.out.println("Client Connection Closed.");
 	    }
 	}
 	

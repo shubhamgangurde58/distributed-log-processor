@@ -3,7 +3,6 @@ package com.shubham.dlp.distributed_log_processor.client;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.net.UnknownHostException;
 
 public class LogClient {
 	
@@ -25,6 +24,8 @@ public class LogClient {
 
 				System.out.println("Log Sent Successfully.");
 				
+				writer.close();
+				socket.close();
 				
 		}catch(IOException ex) {
 			
