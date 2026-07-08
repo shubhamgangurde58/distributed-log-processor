@@ -6,6 +6,7 @@ public class Log {
 	
 	private long id;
 	private LocalDateTime timestamp;
+	private String clientName;
 	private LogLevel logLevel;
 	private String message;
 	
@@ -14,10 +15,11 @@ public class Log {
 		
 	}
 	
-	public Log(long id , LocalDateTime timestamp , LogLevel logLevel , String message) {
+	public Log(long id , LocalDateTime timestamp ,  String clientName,  LogLevel logLevel , String message) {
 		
 		this.id = id;
 		this.timestamp = timestamp;
+		this.clientName = clientName;
 		this.logLevel = logLevel;
 		this.message = message;
 		
@@ -35,7 +37,19 @@ public class Log {
 	public LocalDateTime getTimestamp() {
 		return timestamp;
 	}
+	
+	public void setTimestamp(LocalDateTime timestamp) {
+		this.timestamp = timestamp;
+	}
 
+	public String getClientName() {
+	    return clientName;
+	}
+
+	public void setClientName(String clientName) {
+	    this.clientName = clientName;
+	}
+	
 	public LogLevel getLogLevel() {
 		return logLevel;
 	}
@@ -52,18 +66,12 @@ public class Log {
 		this.message = message;
 	}
 
-	public void setTimestamp(LocalDateTime timestamp) {
-		this.timestamp = timestamp;
-	}
-	
-
 	@Override
 	public String toString() {
-		return "Log [id=" + id + ", timestamp=" + timestamp + ", logLevel=" + logLevel + ", message=" + message + "]";
+		return "Log [id=" + id + ", timestamp=" + timestamp + ", clientName=" + clientName + ", logLevel=" + logLevel
+				+ ", message=" + message + "]";
 	}
 	
 	
-	
-	
-	
+
 }

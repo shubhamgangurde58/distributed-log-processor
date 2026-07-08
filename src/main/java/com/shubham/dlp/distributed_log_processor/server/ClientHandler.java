@@ -23,29 +23,31 @@ public class ClientHandler extends Thread {
 
 	public void run() {
 		
-	    System.out.println("Handling Client : " + socket.getInetAddress().getHostAddress());	
+		System.out.println(
+			    "Handling Client : "
+			    + socket.getInetAddress().getHostAddress()
+			    + " | Thread : "
+			    + Thread.currentThread().getName()
+			);	
 	    
 	    try {
 	    	
 	    		BufferedReader reader= new BufferedReader( new InputStreamReader(socket.getInputStream()));
 	    	
-	    		String receivedLog  = reader.readLine();
+	    		String receivedLog;
 	    		
-	    		if(receivedLog == null) {
-	    			
-	    		    System.out.println("Client disconnected.");
-	    		    return;
-	    		}
+	    		while ((receivedLog = reader.readLine()) != null) {
 
-	    		System.out.println("Received Log : " + receivedLog);
-	    		
-	    		 LogParser parser = new LogParser();
 
-	    	     Log log = parser.parse(receivedLog);
-
-	    	     System.out.println(log);
+		    		System.out.println("Received Log : " + receivedLog);
+		    		
+		    		 LogParser parser = new LogParser();
+	
+		    	     Log log = parser.parse(receivedLog);
+	
+		    	     System.out.println(log);
 	    	     
-	    	     	LogValidator validator = new LogValidator();    
+	    	     		LogValidator validator = new LogValidator();    
 		    	     
 		    	     LogDAO dao = new LogDAO();
 
@@ -70,17 +72,17 @@ public class ClientHandler extends Thread {
 		    	         System.out.println("Log Validation : FAILED");
 
 		    	     }
+	    		}
 		    	     
-		    	     reader.close();
-		    	     socket.close();
+		    	reader.close();
+		    	socket.close();
 		    	     
-		    	     
-		    	     
-		    	
+		    	        	
 	    }catch(Exception e){
 	    	
 	    	
-	        System.out.println("Client Connection Closed.");
+	    	System.out.println("Client Disconnected : "
+	                + socket.getInetAddress().getHostAddress());
 	    }
 	}
 	

@@ -11,7 +11,7 @@ public class LogDAO {
 		
 	public boolean saveLog(Log log) {
 
-        String sql = "INSERT INTO logs(timestamp, log_level, message) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO logs(timestamp, client_name, log_level, message) VALUES (?, ?, ?, ?)";
 
         try {
 
@@ -20,10 +20,12 @@ public class LogDAO {
             PreparedStatement statement = connection.prepareStatement(sql);
 
             statement.setTimestamp(1, java.sql.Timestamp.valueOf(log.getTimestamp()));
+            
+            statement.setString(2, log.getClientName());
 
-            statement.setString(2, log.getLogLevel().name());
+            statement.setString(3, log.getLogLevel().name());
 
-            statement.setString(3, log.getMessage());
+            statement.setString(4, log.getMessage());
 
             int rows = statement.executeUpdate();
 

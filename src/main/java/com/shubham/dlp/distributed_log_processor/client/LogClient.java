@@ -3,11 +3,16 @@ package com.shubham.dlp.distributed_log_processor.client;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
+import com.shubham.dlp.distributed_log_processor.generator.LogGenerator;
 
 public class LogClient {
 	
 	
 	public static void main(String args[]) {
+		
+		String clientName = "Client-1";
+		
+		LogGenerator generator = new LogGenerator(clientName);
 		
 		
 		System.out.println("Starting Client....");
@@ -20,12 +25,24 @@ public class LogClient {
 				
 				PrintWriter writer = new PrintWriter(socket.getOutputStream(),true);
 				
-				writer.println("2026-07-03T18:30:45|INFO|Application Started");
-
-				System.out.println("Log Sent Successfully.");
+				while(true) {
 				
-				writer.close();
-				socket.close();
+					String log = generator.generateLog();
+	
+					writer.println(log);
+	
+					System.out.println("Sent : " + log);
+					
+					try {
+						
+						Thread.sleep(2000);
+						
+					} catch (InterruptedException e) {
+						
+						System.out.println(e.getMessage());
+					}
+					
+				}
 				
 		}catch(IOException ex) {
 			

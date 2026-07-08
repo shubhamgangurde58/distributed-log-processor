@@ -14,8 +14,9 @@ public class LogParser {
 	        Log log = new Log();
 
 	        log.setTimestamp(LocalDateTime.parse(parts[0]));
-	        log.setLogLevel(LogLevel.valueOf(parts[1]));
-	        log.setMessage(parts[2]);
+	        log.setClientName(parts[1]);
+	        log.setLogLevel(LogLevel.valueOf(parts[2]));
+	        log.setMessage(parts[3]);
 
 	        return log;
 	    }

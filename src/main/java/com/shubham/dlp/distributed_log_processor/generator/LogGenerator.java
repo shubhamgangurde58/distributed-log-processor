@@ -21,8 +21,14 @@ public class LogGenerator {
 	            "Server Restarted"
 
 	    };
-	
+		
+		private String clientName;
 
+		public LogGenerator(String clientName) {
+		    this.clientName = clientName;
+		}
+	
+		
 		 private Random random = new Random();
 		 
 		 public String generateLog() {
@@ -39,7 +45,7 @@ public class LogGenerator {
 		        String message = MESSAGES[random.nextInt(MESSAGES.length)];
 		        
 
-		        return timestamp + "|" + level + "|" + message;
+		        return timestamp + "|" + clientName + "|" + level + "|" + message;
 
 		    }
 		
