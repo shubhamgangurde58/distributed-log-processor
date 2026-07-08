@@ -45,17 +45,7 @@ public class ClientHandler extends Thread {
 
 	    	     System.out.println(log);
 	    	     
-	    	     	LogValidator validator = new LogValidator();
-
-		    	     if (validator.validate(log)) {
-		    	    	 
-		    	         System.out.println("Log Validation : SUCCESS");
-		    	         
-		    	     } else {
-		    	    	 
-		    	         System.out.println("Log Validation : FAILED");
-		    	     }
-		    	     
+	    	     	LogValidator validator = new LogValidator();    
 		    	     
 		    	     LogDAO dao = new LogDAO();
 
