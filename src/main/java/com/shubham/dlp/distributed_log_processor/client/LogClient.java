@@ -4,13 +4,18 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 import com.shubham.dlp.distributed_log_processor.generator.LogGenerator;
+import java.util.Scanner;
 
 public class LogClient {
 	
 	
 	public static void main(String args[]) {
 		
-		String clientName = "Client-1";
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the Client Name : ");
+		
+		String clientName = sc.nextLine();
 		
 		LogGenerator generator = new LogGenerator(clientName);
 		
