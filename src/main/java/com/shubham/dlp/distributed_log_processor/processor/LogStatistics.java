@@ -14,7 +14,8 @@ public class LogStatistics {
 
     private int warningCount;
 
-    private int debugCount;
+ 
+	private int debugCount;
     
     public synchronized void printStatistics() {
 
@@ -61,5 +62,46 @@ public class LogStatistics {
         }
 
     }
+    
+		    public int getTotalLogs() {
+		 		return totalLogs;
+		 	}
+		
+		 	public void setTotalLogs(int totalLogs) {
+		 		this.totalLogs = totalLogs;
+		 	}
+		
+		 	public int getInfoCount() {
+		 		return infoCount;
+		 	}
+		
+		 	public void setInfoCount(int infoCount) {
+		 		this.infoCount = infoCount;
+		 	}
+		
+		 	public int getErrorCount() {
+		 		return errorCount;
+		 	}
+		
+		 	public void setErrorCount(int errorCount) {
+		 		this.errorCount = errorCount;
+		 	}
+		
+		 	public int getWarningCount() {
+		 		return warningCount;
+		 	}
+		
+		 	public void setWarningCount(int warningCount) {
+		 		this.warningCount = warningCount;
+		 	}
+		
+		 	public int getDebugCount() {
+		 		return debugCount;
+		 	}
+		
+		 	public void setDebugCount(int debugCount) {
+		 		this.debugCount = debugCount;
+		 	}
+
 
 }

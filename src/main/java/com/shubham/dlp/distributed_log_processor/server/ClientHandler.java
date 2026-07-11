@@ -23,6 +23,12 @@ public class ClientHandler extends Thread {
 		
 	}
 	
+	public static LogStatistics getStatistics() {
+		
+	    return statistics;
+	    
+	}
+	
 
 	public void run() {
 		

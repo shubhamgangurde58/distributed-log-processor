@@ -11,6 +11,76 @@ import com.shubham.dlp.distributed_log_processor.model.Log;
 import com.shubham.dlp.distributed_log_processor.model.LogLevel;
 
 public class LogDAO {
+	
+	public void showStatistics() {}
+	
+	public int getLogCountByLevel(String level) {
+
+	    int count = 0;
+
+	    try {
+
+	        Connection connection = DBConnection.getConnection();
+
+	        String sql = "SELECT COUNT(*) FROM logs WHERE log_level = ?";
+
+	        PreparedStatement ps = connection.prepareStatement(sql);
+
+	        ps.setString(1, level);
+
+	        ResultSet rs = ps.executeQuery();
+
+	        if (rs.next()) {
+
+	            count = rs.getInt(1);
+
+	        }
+
+	        rs.close();
+	        ps.close();
+	        connection.close();
+
+	    } catch (Exception e) {
+
+	        e.printStackTrace();
+
+	    }
+
+	    return count;
+	}
+	
+	public int getTotalLogs() {
+
+	    int total = 0;
+
+	    try {
+
+	        Connection connection = DBConnection.getConnection();
+
+	        String sql = "SELECT COUNT(*) FROM logs";
+
+	        PreparedStatement ps = connection.prepareStatement(sql);
+
+	        ResultSet rs = ps.executeQuery();
+
+	        if (rs.next()) {
+
+	            total = rs.getInt(1);
+
+	        }
+
+	        rs.close();
+	        ps.close();
+	        connection.close();
+
+	    } catch (Exception e) {
+
+	        e.printStackTrace();
+
+	    }
+
+	    return total;
+	}
 
 		
 	public boolean saveLog(Log log) {

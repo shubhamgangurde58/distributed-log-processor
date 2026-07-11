@@ -6,6 +6,8 @@ import java.util.Scanner;
 import com.shubham.dlp.distributed_log_processor.database.LogDAO;
 import com.shubham.dlp.distributed_log_processor.model.Log;
 import com.shubham.dlp.distributed_log_processor.model.LogLevel;
+import com.shubham.dlp.distributed_log_processor.processor.LogStatistics;
+import com.shubham.dlp.distributed_log_processor.server.ClientHandler;
 
 public class Dashboard {
 
@@ -29,7 +31,11 @@ public class Dashboard {
 	            
 	            System.out.println("3. Search Logs By Client");
 	            
-	            System.out.println("4. Exit");
+	            System.out.println("4. View Statistics");
+	            
+	            System.out.println("5. Export Logs To CSV");
+	            
+	            System.out.println("6. Exit");
 	            
 	            System.out.println("====================================");
 
@@ -123,8 +129,34 @@ public class Dashboard {
 	                	    }
 	                    
 	                    break;
-
+	                   
 	                case 4:
+	                		
+
+	                		LogDAO dao4 = new LogDAO();
+	                		
+	                	    System.out.println("\n========== LOG STATISTICS ==========");
+
+	                	    System.out.println("Total Logs : " + dao4.getTotalLogs());
+	                	    
+	                	    System.out.println("INFO       : " + dao4.getLogCountByLevel("INFO"));
+
+	                	    System.out.println("ERROR      : " + dao4.getLogCountByLevel("ERROR"));
+
+	                	    System.out.println("WARNING    : " + dao4.getLogCountByLevel("WARNING"));
+
+	                	    System.out.println("DEBUG      : " + dao4.getLogCountByLevel("DEBUG"));
+
+	                	    
+	                	break;
+
+	                case 5:
+	                	
+	                	
+	                	
+	                	break;
+	                	
+	                case 6:
 	                	
 	                    System.out.println("Thank You...");
 	                    
