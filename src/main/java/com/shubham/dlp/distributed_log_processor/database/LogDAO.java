@@ -2,9 +2,13 @@ package com.shubham.dlp.distributed_log_processor.database;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.shubham.dlp.distributed_log_processor.model.Log;
+import com.shubham.dlp.distributed_log_processor.model.LogLevel;
 
 public class LogDAO {
 
@@ -36,11 +40,146 @@ public class LogDAO {
 
         } catch (SQLException e) {
 
-            e.printStackTrace();
+           System.out.println(e.getMessage());
         }
 
         return false;
     }
 	
+	
+	public List<Log> getAllLogs() {
+
+	    List<Log> logs = new ArrayList<>();
+
+	    String sql = "SELECT * FROM logs";
+
+	    try {
+
+	        Connection connection = DBConnection.getConnection();
+
+	        PreparedStatement statement = connection.prepareStatement(sql);
+
+	        ResultSet resultSet = statement.executeQuery();
+
+	        while (resultSet.next()) {
+
+	            Log log = new Log();
+
+	            log.setId(resultSet.getLong("id"));
+
+	            log.setTimestamp(resultSet.getTimestamp("timestamp").toLocalDateTime());
+
+	            log.setClientName(resultSet.getString("client_name"));
+
+	            log.setLogLevel(LogLevel.valueOf(resultSet.getString("log_level")));
+
+	            log.setMessage(resultSet.getString("message"));
+
+	            logs.add(log);
+	        }
+
+	        resultSet.close();
+	        statement.close();
+	        connection.close();
+
+	    } catch (Exception e) {
+
+	        System.out.println(e.getMessage());
+	    }
+
+	    return logs;
+	}
+	
+	
+	public List<Log> getLogsByLevel(LogLevel level) {
+
+	    List<Log> logs = new ArrayList<>();
+
+	    String sql = "SELECT * FROM logs WHERE log_level = ?";
+
+	    try {
+
+	        Connection connection = DBConnection.getConnection();
+
+	        PreparedStatement statement = connection.prepareStatement(sql);
+
+	        statement.setString(1, level.name());
+
+	        ResultSet resultSet = statement.executeQuery();
+
+	        while (resultSet.next()) {
+
+	            Log log = new Log();
+
+	            log.setId(resultSet.getLong("id"));
+	            log.setTimestamp(resultSet.getTimestamp("timestamp").toLocalDateTime());
+	            log.setClientName(resultSet.getString("client_name"));
+	            log.setLogLevel(LogLevel.valueOf(resultSet.getString("log_level")));
+	            log.setMessage(resultSet.getString("message"));
+
+	            logs.add(log);
+
+	        }
+
+	        resultSet.close();
+	        statement.close();
+	        connection.close();
+
+	    } catch (Exception e) {
+
+	        System.out.println(e.getMessage());
+
+	    }
+
+	    return logs;
+	}
+	
+	
+	public List<Log> getLogsByClient(String clientName) {
+
+	    List<Log> logs = new ArrayList<>();
+
+	    String sql = "SELECT * FROM logs WHERE client_name = ?";
+
+	    try {
+
+	        Connection connection = DBConnection.getConnection();
+
+	        PreparedStatement statement = connection.prepareStatement(sql);
+
+	        statement.setString(1, clientName);
+
+	        ResultSet resultSet = statement.executeQuery();
+
+	        while (resultSet.next()) {
+
+	            Log log = new Log();
+
+	            log.setId(resultSet.getLong("id"));
+	            
+	            log.setTimestamp(resultSet.getTimestamp("timestamp").toLocalDateTime());
+	            
+	            log.setClientName(resultSet.getString("client_name"));
+	            
+	            log.setLogLevel(LogLevel.valueOf(resultSet.getString("log_level")));
+	            
+	            log.setMessage(resultSet.getString("message"));
+
+	            logs.add(log);
+	        }
+
+	        resultSet.close();
+	        
+	        statement.close();
+	        
+	        connection.close();
+
+	    } catch (Exception e) {
+
+	        System.out.println(e.getMessage());
+	    }
+
+	    return logs;
+	}
 	
 }
