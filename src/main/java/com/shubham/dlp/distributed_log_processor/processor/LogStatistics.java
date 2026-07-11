@@ -16,6 +16,28 @@ public class LogStatistics {
 
     private int debugCount;
     
+    public synchronized void printStatistics() {
+
+        System.out.println("\n====================================");
+        
+        System.out.println("        LOG STATISTICS");
+        
+        System.out.println("====================================");
+
+        System.out.println("Total Logs : " + totalLogs);
+        
+        System.out.println("INFO       : " + infoCount);
+        
+        System.out.println("ERROR      : " + errorCount);
+        
+        System.out.println("WARNING    : " + warningCount);
+        
+        System.out.println("DEBUG      : " + debugCount);
+
+        System.out.println("====================================\n");
+
+    }
+    
     public synchronized void updateStatistics(Log log) {
 
         totalLogs++;

@@ -7,11 +7,14 @@ import java.net.Socket;
 import com.shubham.dlp.distributed_log_processor.database.LogDAO;
 import com.shubham.dlp.distributed_log_processor.model.Log;
 import com.shubham.dlp.distributed_log_processor.processor.LogParser;
+import com.shubham.dlp.distributed_log_processor.processor.LogStatistics;
 import com.shubham.dlp.distributed_log_processor.processor.LogValidator;
 
 public class ClientHandler extends Thread {
 	
 	private Socket socket;
+	
+	private static LogStatistics statistics = new LogStatistics();
 	
 	
 	public ClientHandler(Socket socket) {
@@ -50,6 +53,7 @@ public class ClientHandler extends Thread {
 	    	     		LogValidator validator = new LogValidator();    
 		    	     
 		    	     LogDAO dao = new LogDAO();
+		    	     
 
 		    	     if (validator.validate(log)) {
 
@@ -60,6 +64,10 @@ public class ClientHandler extends Thread {
 		    	         if(saved) {
 
 		    	             System.out.println("Log Stored Successfully.");
+		    	             
+		    	             statistics.updateStatistics(log);
+
+		    	             statistics.printStatistics();
 
 		    	         } else {
 
