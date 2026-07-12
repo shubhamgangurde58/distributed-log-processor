@@ -1,0 +1,319 @@
+ID,Timestamp,Client,Level,Message
+1,2026-07-03 18:30:45,null,INFO,Application Started
+2,2026-07-03 18:30:45,null,INFO,Application Started
+3,2026-07-08 23:13:53,null,ERROR,Database Connection Failed
+4,2026-07-08 23:27:26,null,INFO,Server Restarted
+5,2026-07-08 23:27:28,null,ERROR,Database Connection Failed
+6,2026-07-08 23:27:30,null,WARNING,Database Connection Failed
+7,2026-07-08 23:27:32,null,ERROR,Network Timeout
+8,2026-07-08 23:27:34,null,WARNING,Database Connection Failed
+9,2026-07-08 23:27:36,null,INFO,Payment Successful
+10,2026-07-08 23:27:38,null,ERROR,User Login Successful
+11,2026-07-08 23:27:40,null,DEBUG,Network Timeout
+12,2026-07-08 23:27:42,null,WARNING,Database Connection Failed
+13,2026-07-08 23:27:44,null,DEBUG,File Uploaded
+14,2026-07-08 23:27:47,null,WARNING,File Uploaded
+15,2026-07-08 23:27:49,null,ERROR,Server Restarted
+16,2026-07-08 23:27:51,null,ERROR,Server Restarted
+17,2026-07-08 23:27:53,null,DEBUG,Payment Successful
+18,2026-07-08 23:29:01,null,WARNING,Memory Usage High
+19,2026-07-08 23:29:03,null,INFO,Application Started
+20,2026-07-08 23:29:05,null,ERROR,Database Connection Failed
+21,2026-07-08 23:29:07,null,ERROR,File Uploaded
+22,2026-07-08 23:29:09,null,WARNING,Memory Usage High
+23,2026-07-08 23:29:11,null,WARNING,Memory Usage High
+24,2026-07-08 23:29:13,null,INFO,Application Started
+25,2026-07-08 23:29:15,null,ERROR,Server Restarted
+26,2026-07-08 23:29:17,null,WARNING,Database Connection Failed
+27,2026-07-08 23:29:19,null,DEBUG,File Uploaded
+28,2026-07-08 23:29:21,null,INFO,Server Restarted
+29,2026-07-08 23:29:23,null,INFO,File Uploaded
+30,2026-07-08 23:29:25,null,INFO,Memory Usage High
+31,2026-07-08 23:29:27,null,ERROR,User Login Successful
+32,2026-07-08 23:29:29,null,WARNING,Memory Usage High
+33,2026-07-08 23:29:31,null,DEBUG,Application Started
+34,2026-07-08 23:29:33,null,INFO,User Login Successful
+35,2026-07-08 23:29:35,null,ERROR,Network Timeout
+36,2026-07-08 23:29:37,null,DEBUG,User Login Successful
+37,2026-07-08 23:29:39,null,ERROR,Payment Successful
+38,2026-07-08 23:29:41,null,ERROR,File Uploaded
+39,2026-07-08 23:29:43,null,DEBUG,Network Timeout
+40,2026-07-08 23:29:45,null,INFO,User Login Successful
+41,2026-07-09 00:21:06,Client-1,DEBUG,Memory Usage High
+42,2026-07-09 00:21:08,Client-1,DEBUG,File Uploaded
+43,2026-07-09 00:21:10,Client-1,ERROR,Database Connection Failed
+44,2026-07-09 00:21:12,Client-1,WARNING,Server Restarted
+45,2026-07-09 00:21:14,Client-1,INFO,Memory Usage High
+46,2026-07-09 00:21:16,Client-1,WARNING,Database Connection Failed
+47,2026-07-09 19:16:56,Client-1,DEBUG,Database Connection Failed
+48,2026-07-09 19:16:58,Client-1,DEBUG,Memory Usage High
+49,2026-07-09 19:17:00,Client-1,WARNING,File Uploaded
+50,2026-07-09 19:17:02,Client-1,INFO,Database Connection Failed
+51,2026-07-09 19:17:04,Client-1,ERROR,Database Connection Failed
+52,2026-07-09 19:17:06,Client-1,WARNING,Memory Usage High
+53,2026-07-09 19:17:08,Client-1,WARNING,Database Connection Failed
+54,2026-07-09 19:17:10,Client-1,WARNING,File Uploaded
+55,2026-07-09 19:17:11,Client-2,ERROR,Database Connection Failed
+56,2026-07-09 19:17:12,Client-1,INFO,Memory Usage High
+57,2026-07-09 19:17:13,Client-2,DEBUG,File Uploaded
+58,2026-07-09 19:17:14,Client-1,INFO,User Login Successful
+59,2026-07-09 19:17:15,Client-2,ERROR,Memory Usage High
+60,2026-07-09 19:17:16,Client-1,ERROR,User Login Successful
+61,2026-07-09 19:17:17,Client-2,WARNING,Payment Successful
+62,2026-07-09 19:17:18,Client-1,INFO,Memory Usage High
+63,2026-07-09 19:17:19,Client-2,WARNING,Application Started
+64,2026-07-09 19:17:20,Client-1,ERROR,Payment Successful
+65,2026-07-09 19:17:21,Client-2,ERROR,Memory Usage High
+66,2026-07-09 19:17:22,Client-1,ERROR,Application Started
+67,2026-07-09 19:17:23,Client-3,DEBUG,File Uploaded
+68,2026-07-09 19:17:23,Client-2,INFO,User Login Successful
+69,2026-07-09 19:17:24,Client-1,INFO,Server Restarted
+70,2026-07-09 19:17:25,Client-3,ERROR,Memory Usage High
+71,2026-07-09 19:17:25,Client-2,DEBUG,Server Restarted
+72,2026-07-09 19:17:26,Client-1,WARNING,Memory Usage High
+73,2026-07-09 19:17:27,Client-3,ERROR,Payment Successful
+74,2026-07-09 19:17:27,Client-2,DEBUG,Network Timeout
+75,2026-07-09 19:17:28,Client-1,ERROR,Application Started
+76,2026-07-09 19:17:29,Client-3,ERROR,User Login Successful
+77,2026-07-09 19:17:29,Client-2,ERROR,Network Timeout
+78,2026-07-09 19:17:30,Client-1,WARNING,Server Restarted
+79,2026-07-09 19:17:31,Client-3,DEBUG,File Uploaded
+80,2026-07-09 19:17:31,Client-2,ERROR,Application Started
+81,2026-07-09 19:17:32,Client-1,DEBUG,Server Restarted
+82,2026-07-09 19:17:33,Client-3,ERROR,Payment Successful
+83,2026-07-09 19:17:33,Client-2,DEBUG,Database Connection Failed
+84,2026-07-09 19:17:34,Client-1,ERROR,Network Timeout
+85,2026-07-09 19:17:35,Client-3,WARNING,Network Timeout
+86,2026-07-09 19:17:35,Client-2,ERROR,Server Restarted
+87,2026-07-09 19:17:36,Client-1,INFO,Payment Successful
+88,2026-07-09 19:17:37,Client-3,DEBUG,Payment Successful
+89,2026-07-09 19:17:37,Client-2,INFO,Server Restarted
+90,2026-07-09 19:17:38,Client-1,ERROR,Network Timeout
+91,2026-07-09 19:17:39,Client-3,DEBUG,File Uploaded
+92,2026-07-09 19:17:39,Client-2,WARNING,Memory Usage High
+93,2026-07-09 19:17:40,Client-1,ERROR,Network Timeout
+94,2026-07-09 19:17:41,Client-3,WARNING,Payment Successful
+95,2026-07-09 19:17:41,Client-2,DEBUG,Server Restarted
+96,2026-07-09 19:17:42,Client-1,DEBUG,File Uploaded
+97,2026-07-09 19:17:43,Client-3,DEBUG,Payment Successful
+98,2026-07-09 19:17:43,Client-2,ERROR,Memory Usage High
+99,2026-07-09 19:17:44,Client-1,WARNING,Payment Successful
+100,2026-07-09 19:17:45,Client-3,INFO,Memory Usage High
+101,2026-07-09 19:17:45,Client-2,DEBUG,File Uploaded
+102,2026-07-09 19:17:46,Client-1,ERROR,Database Connection Failed
+103,2026-07-09 19:17:47,Client-3,WARNING,Server Restarted
+104,2026-07-09 19:17:47,Client-2,DEBUG,Memory Usage High
+105,2026-07-09 19:17:48,Client-1,ERROR,Network Timeout
+106,2026-07-09 19:17:49,Client-3,DEBUG,User Login Successful
+107,2026-07-09 19:17:49,Client-2,INFO,Server Restarted
+108,2026-07-09 19:17:50,Client-1,INFO,Database Connection Failed
+109,2026-07-09 19:17:51,Client-3,ERROR,Server Restarted
+110,2026-07-09 19:17:51,Client-2,INFO,Memory Usage High
+111,2026-07-09 19:17:52,Client-1,WARNING,Payment Successful
+112,2026-07-09 19:17:53,Client-3,INFO,File Uploaded
+113,2026-07-09 19:17:53,Client-2,WARNING,Memory Usage High
+114,2026-07-09 19:17:54,Client-1,DEBUG,Network Timeout
+115,2026-07-09 19:17:55,Client-3,ERROR,Memory Usage High
+116,2026-07-09 19:17:55,Client-2,DEBUG,Application Started
+117,2026-07-09 19:17:56,Client-1,ERROR,Application Started
+118,2026-07-09 19:17:57,Client-3,WARNING,Network Timeout
+119,2026-07-09 19:17:57,Client-2,INFO,Memory Usage High
+120,2026-07-09 19:17:58,Client-1,ERROR,Payment Successful
+121,2026-07-09 19:17:59,Client-3,DEBUG,User Login Successful
+122,2026-07-09 19:17:59,Client-2,ERROR,Database Connection Failed
+123,2026-07-09 19:18:00,Client-1,ERROR,File Uploaded
+124,2026-07-09 19:18:01,Client-3,INFO,User Login Successful
+125,2026-07-09 19:18:01,Client-2,DEBUG,Server Restarted
+126,2026-07-09 19:18:02,Client-1,INFO,File Uploaded
+127,2026-07-09 19:18:03,Client-3,DEBUG,Payment Successful
+128,2026-07-09 19:18:03,Client-2,INFO,Database Connection Failed
+129,2026-07-09 19:18:04,Client-1,WARNING,Payment Successful
+130,2026-07-09 19:18:05,Client-3,INFO,Application Started
+131,2026-07-09 19:18:05,Client-2,ERROR,Application Started
+132,2026-07-09 19:18:06,Client-1,WARNING,Payment Successful
+133,2026-07-09 19:18:07,Client-3,INFO,Memory Usage High
+134,2026-07-09 19:18:07,Client-2,DEBUG,Database Connection Failed
+135,2026-07-09 19:18:08,Client-1,ERROR,Application Started
+136,2026-07-09 19:18:09,Client-3,WARNING,Server Restarted
+137,2026-07-09 19:18:09,Client-2,DEBUG,Server Restarted
+138,2026-07-09 19:18:10,Client-1,ERROR,User Login Successful
+139,2026-07-09 19:18:11,Client-3,DEBUG,User Login Successful
+140,2026-07-09 19:18:11,Client-2,INFO,User Login Successful
+141,2026-07-09 19:18:12,Client-1,DEBUG,Network Timeout
+142,2026-07-09 19:18:13,Client-3,ERROR,Application Started
+143,2026-07-09 19:18:13,Client-2,WARNING,Server Restarted
+144,2026-07-09 19:18:14,Client-1,INFO,Network Timeout
+145,2026-07-09 19:18:15,Client-3,DEBUG,User Login Successful
+146,2026-07-09 19:18:15,Client-2,INFO,Payment Successful
+147,2026-07-09 19:18:16,Client-1,INFO,File Uploaded
+148,2026-07-09 19:18:17,Client-3,DEBUG,Network Timeout
+149,2026-07-09 19:18:17,Client-2,INFO,Application Started
+150,2026-07-09 19:18:18,Client-1,ERROR,File Uploaded
+151,2026-07-09 19:18:19,Client-3,WARNING,User Login Successful
+152,2026-07-09 19:18:19,Client-2,ERROR,Server Restarted
+153,2026-07-11 11:39:49,Client-1,WARNING,Database Connection Failed
+154,2026-07-11 11:39:51,Client-1,WARNING,Network Timeout
+155,2026-07-11 11:39:53,Client-1,WARNING,Server Restarted
+156,2026-07-11 11:39:55,Client-1,INFO,Server Restarted
+157,2026-07-11 11:39:57,Client-1,ERROR,Network Timeout
+158,2026-07-11 11:39:59,Client-1,DEBUG,Database Connection Failed
+159,2026-07-11 11:40:01,Client-1,WARNING,Memory Usage High
+160,2026-07-11 11:40:03,Client-1,INFO,Memory Usage High
+161,2026-07-11 11:40:04,Client-2,DEBUG,Server Restarted
+162,2026-07-11 11:40:05,Client-1,DEBUG,User Login Successful
+163,2026-07-11 11:40:06,Client-2,ERROR,Payment Successful
+164,2026-07-11 11:40:07,Client-1,WARNING,Memory Usage High
+165,2026-07-11 11:40:08,Client-2,WARNING,User Login Successful
+166,2026-07-11 11:40:09,Client-1,INFO,File Uploaded
+167,2026-07-11 11:40:10,Client-2,WARNING,Network Timeout
+168,2026-07-11 11:40:11,Client-1,DEBUG,File Uploaded
+169,2026-07-11 11:40:12,Client-2,ERROR,Database Connection Failed
+170,2026-07-11 11:40:13,Client-1,DEBUG,File Uploaded
+171,2026-07-11 11:40:14,Client-2,ERROR,Network Timeout
+172,2026-07-11 11:40:15,Client-1,ERROR,Payment Successful
+173,2026-07-11 11:40:16,Client-2,ERROR,Memory Usage High
+174,2026-07-11 11:40:17,Client-1,ERROR,Network Timeout
+175,2026-07-11 11:40:18,Client-2,INFO,Server Restarted
+176,2026-07-11 11:40:19,Client-1,DEBUG,Network Timeout
+177,2026-07-11 11:40:19,Client-3,WARNING,Payment Successful
+178,2026-07-11 11:40:20,Client-2,WARNING,Server Restarted
+179,2026-07-11 11:40:21,Client-1,WARNING,File Uploaded
+180,2026-07-11 11:40:21,Client-3,INFO,Server Restarted
+181,2026-07-11 11:40:22,Client-2,DEBUG,Payment Successful
+182,2026-07-11 11:40:23,Client-1,ERROR,Payment Successful
+183,2026-07-11 11:40:23,Client-3,WARNING,Memory Usage High
+184,2026-07-11 11:40:24,Client-2,INFO,Database Connection Failed
+185,2026-07-11 11:40:25,Client-1,DEBUG,Network Timeout
+186,2026-07-11 11:40:25,Client-3,ERROR,File Uploaded
+187,2026-07-11 11:40:26,Client-2,ERROR,Application Started
+188,2026-07-11 11:40:27,Client-1,INFO,Memory Usage High
+189,2026-07-11 11:40:27,Client-3,DEBUG,Network Timeout
+190,2026-07-11 11:40:28,Client-2,INFO,Network Timeout
+191,2026-07-11 11:40:29,Client-1,DEBUG,Server Restarted
+192,2026-07-11 11:40:29,Client-3,DEBUG,Application Started
+193,2026-07-11 11:40:30,Client-2,WARNING,Application Started
+194,2026-07-11 11:40:31,Client-1,WARNING,Network Timeout
+195,2026-07-11 11:40:31,Client-3,ERROR,Payment Successful
+196,2026-07-11 11:40:32,Client-2,ERROR,Database Connection Failed
+197,2026-07-11 11:40:33,Client-1,INFO,Application Started
+198,2026-07-11 11:40:33,Client-3,INFO,User Login Successful
+199,2026-07-11 11:40:34,Client-2,WARNING,Network Timeout
+200,2026-07-11 11:40:35,Client-1,INFO,Network Timeout
+201,2026-07-11 11:40:35,Client-3,ERROR,Network Timeout
+202,2026-07-11 11:40:36,Client-2,INFO,Payment Successful
+203,2026-07-11 11:40:37,Client-1,ERROR,Payment Successful
+204,2026-07-11 11:40:37,Client-3,ERROR,Payment Successful
+205,2026-07-11 11:40:38,Client-2,DEBUG,Network Timeout
+206,2026-07-11 11:40:39,Client-1,ERROR,Application Started
+207,2026-07-11 11:40:40,Client-3,DEBUG,File Uploaded
+208,2026-07-11 11:40:40,Client-2,WARNING,Application Started
+209,2026-07-11 11:40:41,Client-1,DEBUG,User Login Successful
+210,2026-07-11 11:40:42,Client-3,INFO,Network Timeout
+211,2026-07-11 11:40:42,Client-2,ERROR,Application Started
+212,2026-07-11 11:40:43,Client-1,WARNING,File Uploaded
+213,2026-07-11 11:40:44,Client-3,WARNING,Application Started
+214,2026-07-11 11:40:44,Client-2,WARNING,Network Timeout
+215,2026-07-11 11:40:45,Client-1,WARNING,Application Started
+216,2026-07-11 11:40:46,Client-3,WARNING,Database Connection Failed
+217,2026-07-11 11:40:46,Client-2,WARNING,User Login Successful
+218,2026-07-11 11:40:47,Client-1,INFO,File Uploaded
+219,2026-07-11 11:40:48,Client-2,DEBUG,User Login Successful
+220,2026-07-11 11:40:48,Client-3,DEBUG,Payment Successful
+221,2026-07-11 11:40:49,Client-1,DEBUG,Server Restarted
+222,2026-07-11 11:40:50,Client-2,ERROR,File Uploaded
+223,2026-07-11 11:40:50,Client-3,WARNING,User Login Successful
+224,2026-07-11 11:40:51,Client-1,WARNING,Payment Successful
+225,2026-07-11 11:40:52,Client-2,ERROR,User Login Successful
+226,2026-07-11 11:40:52,Client-3,INFO,Memory Usage High
+227,2026-07-11 11:40:53,Client-1,WARNING,Application Started
+228,2026-07-11 11:40:54,Client-2,DEBUG,User Login Successful
+229,2026-07-11 11:40:54,Client-3,WARNING,Payment Successful
+230,2026-07-11 11:40:55,Client-1,INFO,File Uploaded
+231,2026-07-11 11:40:56,Client-2,WARNING,Payment Successful
+232,2026-07-11 11:40:56,Client-3,WARNING,Database Connection Failed
+233,2026-07-11 11:40:57,Client-1,ERROR,Network Timeout
+234,2026-07-11 11:40:58,Client-2,DEBUG,Memory Usage High
+235,2026-07-11 11:40:58,Client-3,ERROR,Network Timeout
+236,2026-07-11 11:41:00,Client-2,INFO,Application Started
+237,2026-07-11 11:40:59,Client-1,INFO,Server Restarted
+238,2026-07-11 11:41:02,Client-2,WARNING,Server Restarted
+239,2026-07-11 11:41:00,Client-3,DEBUG,Network Timeout
+240,2026-07-11 11:41:01,Client-1,INFO,Server Restarted
+241,2026-07-11 11:41:02,Client-3,WARNING,Database Connection Failed
+242,2026-07-11 11:41:03,Client-1,DEBUG,Memory Usage High
+243,2026-07-11 11:41:04,Client-3,ERROR,Application Started
+244,2026-07-11 11:41:04,Client-2,WARNING,Network Timeout
+245,2026-07-11 11:41:06,Client-1,DEBUG,File Uploaded
+246,2026-07-11 11:41:06,Client-3,ERROR,Database Connection Failed
+247,2026-07-11 11:41:06,Client-2,DEBUG,Payment Successful
+248,2026-07-11 11:41:08,Client-1,ERROR,User Login Successful
+249,2026-07-11 11:41:08,Client-3,ERROR,Application Started
+250,2026-07-11 11:41:08,Client-2,WARNING,File Uploaded
+251,2026-07-11 11:41:10,Client-1,DEBUG,Database Connection Failed
+252,2026-07-11 11:41:10,Client-3,DEBUG,User Login Successful
+253,2026-07-11 11:41:10,Client-2,INFO,Application Started
+254,2026-07-11 11:41:12,Client-1,WARNING,Payment Successful
+255,2026-07-11 11:41:12,Client-3,DEBUG,File Uploaded
+256,2026-07-11 11:41:12,Client-2,INFO,Memory Usage High
+257,2026-07-11 11:41:14,Client-1,ERROR,User Login Successful
+258,2026-07-11 11:41:14,Client-3,WARNING,Memory Usage High
+259,2026-07-11 11:41:14,Client-2,WARNING,User Login Successful
+260,2026-07-11 11:41:16,Client-1,DEBUG,Application Started
+261,2026-07-11 11:41:16,Client-3,INFO,Server Restarted
+262,2026-07-11 11:41:16,Client-2,ERROR,User Login Successful
+263,2026-07-11 11:41:18,Client-1,DEBUG,Memory Usage High
+264,2026-07-11 11:41:18,Client-3,INFO,Server Restarted
+265,2026-07-11 11:41:18,Client-2,WARNING,Database Connection Failed
+266,2026-07-11 11:41:20,Client-1,ERROR,Server Restarted
+267,2026-07-11 11:41:20,Client-3,INFO,Network Timeout
+268,2026-07-11 11:52:58,Client-1,ERROR,Payment Successful
+269,2026-07-11 11:53:00,Client-1,INFO,Application Started
+270,2026-07-11 11:53:02,Client-1,WARNING,Network Timeout
+271,2026-07-11 11:53:04,Client-1,INFO,Network Timeout
+272,2026-07-11 11:53:06,Client-1,ERROR,Application Started
+273,2026-07-11 11:53:07,Client-2,DEBUG,Application Started
+274,2026-07-11 11:53:08,Client-1,WARNING,Memory Usage High
+275,2026-07-11 11:53:09,Client-2,DEBUG,Server Restarted
+276,2026-07-11 11:53:10,Client-1,DEBUG,Database Connection Failed
+277,2026-07-11 11:53:11,Client-2,DEBUG,Application Started
+278,2026-07-11 11:53:12,Client-1,INFO,Payment Successful
+279,2026-07-11 11:53:13,Client-2,DEBUG,Network Timeout
+280,2026-07-11 11:53:13,Client-3,DEBUG,File Uploaded
+281,2026-07-11 11:53:14,Client-1,DEBUG,Memory Usage High
+282,2026-07-11 11:53:15,Client-2,INFO,Memory Usage High
+283,2026-07-11 11:53:15,Client-3,ERROR,Network Timeout
+284,2026-07-11 11:53:16,Client-1,DEBUG,Network Timeout
+285,2026-07-11 11:53:17,Client-2,WARNING,Server Restarted
+286,2026-07-11 11:53:17,Client-3,ERROR,Application Started
+287,2026-07-11 11:53:18,Client-1,ERROR,Application Started
+288,2026-07-11 11:53:19,Client-2,ERROR,File Uploaded
+289,2026-07-11 11:53:19,Client-3,ERROR,Server Restarted
+290,2026-07-11 11:53:20,Client-1,DEBUG,File Uploaded
+291,2026-07-11 11:53:21,Client-2,INFO,File Uploaded
+292,2026-07-11 11:53:21,Client-3,ERROR,User Login Successful
+293,2026-07-11 11:53:22,Client-1,ERROR,Payment Successful
+294,2026-07-11 11:53:23,Client-2,WARNING,File Uploaded
+295,2026-07-11 11:53:23,Client-3,ERROR,Application Started
+296,2026-07-11 11:53:24,Client-1,DEBUG,Application Started
+297,2026-07-11 11:53:25,Client-2,ERROR,Server Restarted
+298,2026-07-11 11:53:25,Client-3,DEBUG,Network Timeout
+299,2026-07-11 11:53:26,Client-1,WARNING,File Uploaded
+300,2026-07-11 11:53:27,Client-2,DEBUG,Payment Successful
+301,2026-07-11 11:53:27,Client-3,WARNING,Memory Usage High
+302,2026-07-11 11:53:28,Client-1,WARNING,User Login Successful
+303,2026-07-11 11:53:29,Client-2,INFO,Database Connection Failed
+304,2026-07-11 11:53:29,Client-3,ERROR,File Uploaded
+305,2026-07-11 11:53:30,Client-1,INFO,Payment Successful
+306,2026-07-11 11:53:31,Client-2,DEBUG,Database Connection Failed
+307,2026-07-11 11:53:31,Client-3,ERROR,Server Restarted
+308,2026-07-11 11:53:32,Client-1,ERROR,Payment Successful
+309,2026-07-11 11:53:33,Client-2,INFO,Payment Successful
+310,2026-07-11 11:53:34,Client-3,WARNING,Application Started
+311,2026-07-11 11:53:34,Client-1,INFO,Database Connection Failed
+312,2026-07-11 11:53:35,Client-2,ERROR,Memory Usage High
+313,2026-07-11 11:53:36,Client-3,DEBUG,Payment Successful
+314,2026-07-11 11:53:36,Client-1,WARNING,Memory Usage High
+315,2026-07-11 11:53:37,Client-2,WARNING,Payment Successful
+316,2026-07-11 11:53:38,Client-3,ERROR,User Login Successful
+317,2026-07-11 11:53:38,Client-1,ERROR,Payment Successful
+318,2026-07-11 11:53:39,Client-2,WARNING,Network Timeout

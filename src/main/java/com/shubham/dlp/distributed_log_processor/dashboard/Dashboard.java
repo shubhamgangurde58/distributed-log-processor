@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.shubham.dlp.distributed_log_processor.database.LogDAO;
+import com.shubham.dlp.distributed_log_processor.export.CSVExporter;
 import com.shubham.dlp.distributed_log_processor.model.Log;
 import com.shubham.dlp.distributed_log_processor.model.LogLevel;
 import com.shubham.dlp.distributed_log_processor.processor.LogStatistics;
@@ -18,7 +19,7 @@ public class Dashboard {
 
 	        while (true) {
 	        	
-
+	        	
 	            System.out.println("\n====================================");
 	            
 	            System.out.println(" Distributed Log Processor ");
@@ -64,6 +65,7 @@ public class Dashboard {
 	                    
 	                    break;
 
+	                    
 	                case 2:
 	                	
 	                	  System.out.print("Enter Log Level (INFO, ERROR, WARNING, DEBUG): ");
@@ -101,6 +103,7 @@ public class Dashboard {
 	                	    }
 
 	                	    break;
+	                	    
 
 	                case 3:
 	                	
@@ -129,6 +132,7 @@ public class Dashboard {
 	                	    }
 	                    
 	                    break;
+	                    
 	                   
 	                case 4:
 	                		
@@ -149,12 +153,16 @@ public class Dashboard {
 
 	                	    
 	                	break;
+	                	
 
 	                case 5:
 	                	
-	                	
+	                		CSVExporter exporter = new CSVExporter();
+
+	                	    exporter.exportLogs();
 	                	
 	                	break;
+	                	
 	                	
 	                case 6:
 	                	
